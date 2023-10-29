@@ -179,7 +179,7 @@ module.exports = {
 
 ### Bridge APIs
 
-For a description of the available APIs see the [React Native bridge API reference](../api/react-native-bridge.md). FIXME:
+For a description of the available APIs see the [React Native bridge API reference](../../api/react-native-bridge).
 
 ### Native Modules Sample
 
