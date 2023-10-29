@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknodejs_mobile_docs=self.webpackChunknodejs_mobile_docs||[]).push([[535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Reboot","permalink":"/blog/reboot"}]}')}}]);
