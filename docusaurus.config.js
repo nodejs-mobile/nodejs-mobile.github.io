@@ -71,17 +71,17 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
+            type: 'doc',
+            docId: 'guide/intro',
             position: 'left',
-            sidebarId: 'guideSidebar',
-            label: 'Docs',
+            label: 'Guide'
           },
-          // {
-          //   type: 'docSidebar',
-          //   position: 'left',
-          //   sidebarId: 'apiSidebar',
-          //   label: 'API',
-          // },
+          {
+            type: 'doc',
+            docId: 'api/differences',
+            position: 'left',
+            label: 'API'
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/nodejs-mobile',
