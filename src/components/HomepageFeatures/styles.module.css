@@ -9,3 +9,12 @@
   height: 200px;
   width: 200px;
 }
+
+.row {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.row h1,h2,h3 {
+  margin-top: 3rem;
+}
