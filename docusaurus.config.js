@@ -98,7 +98,11 @@ const config = {
             items: [
               {
                 label: 'Guide',
-                to: '/docs/intro',
+                to: '/docs/guide/intro',
+              },
+              {
+                label: 'API',
+                to: '/docs/api/differences',
               },
             ],
           },
