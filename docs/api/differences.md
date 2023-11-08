@@ -119,6 +119,31 @@ Like `os.platform()`, this is the string `'android'` or `'ios'`, depending on th
 
 The `process.versions` object is supported, but also includes the `'mobile'` key, containing the version for the nodejs-mobile core library.
 
+### RegExp Unicode Property Names
+
+:::danger
+Unsupported
+:::
+
+Nodejs-mobile is compiled with no internationalization which means that Unicode Property Names are not supported, examples:
+
+- `\p{Letter}`
+- `\p{L}`
+- `\p{ID_Start}`
+- `\p{ID_Continue}`
+
+As an alternative, you can unwrap the characters belonging to property names, like this:
+
+```js
+const regenerate = require('regenerate');
+const codePoints = require('@unicode/unicode-13.0.0/Binary_Property/ID_Start/code-points.js');
+
+const set = regenerate(codePoints);
+console.log(new RegExp(`[$_${set.toString()}]`));
+```
+
+Or do such as a dedicated package, like [unicode-word-regex](https://github.com/staltz/unicode-word-regex) does.
+
 ### WebAssembly
 
 :::danger
