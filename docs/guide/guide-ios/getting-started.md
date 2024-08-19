@@ -7,7 +7,7 @@ title: "Getting started"
 
 The iOS shared libraries are distributed in a zip file, which you can download from the [core library release page](https://github.com/nodejs-mobile/nodejs-mobile/releases).
 
-The zip file contains the 64 bit universal and device-only `NodeMobile.framework` binaries for iOS 11. The universal `Release-universal/NodeMobile.framework` contains both simulator and device binary code and should be used for development, while the device-only `Release-iphoneos/NodeMobile.framework` only contains device binary code and should be used for App store submissions.
+The zip file contains the 64 bit universal and device-only `NodeMobile.framework` binaries for iOS 11. The universal `ios-arm64_x86_64-simulator/NodeMobile.framework` contains both simulator and device binary code and should be used for development, while the device-only `ios-arm64/NodeMobile.framework` only contains device binary code and should be used for App store submissions.
 
 ### Creating your First Project
 
@@ -52,6 +52,8 @@ In the project settings (click on the project main node), drag the `NodeMobile.f
 The Node binary isn't currently build with bitcode enabled, so, for the time being, we need to disable bitcode for the application as well.
 
 In the project settings (click on the project main node), in the `Build Options` portion of the `Build Settings` tab, set `Enable Bitcode` to `No`.
+
+note: Starting with Xcode 14, Apple has removed Bitcode support, and the ENABLE_BITCODE build setting no longer has any effect. This means that you don’t need to manually disable Bitcode, as it has been deprecated and is no longer relevant for your projects.
 
 ### Create the NodeRunner object that will run the Node.js engine
 
