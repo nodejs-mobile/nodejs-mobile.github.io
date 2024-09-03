@@ -32,7 +32,7 @@ You may need to open your app's `/android` folder in Android Studio, so that it 
 You can also set the environment variable `ANDROID_NDK_HOME`, as in this example:
 
 ```bash
-export ANDROID_NDK_HOME=/Users/username/Library/Android/sdk/ndk-bundle
+export ANDROID_NDK_HOME=/Users/username/Library/Android/sdk/ndk/24.0.8215888
 ```
 
 ### Writing the app code

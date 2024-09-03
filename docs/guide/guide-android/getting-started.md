@@ -19,11 +19,11 @@ This sample runs the Node.js engine in a background thread to start an HTTP serv
 
 When you build your project, Gradle will automatically try to detect any missing dependencies and prompt you to install them from within the Android Studio event log. Here's the list of pre-requisites in case you want to download them from the SDK Manager:
 
-- API Level greater or equal to `Marshmallow` (API Level 23)
+- API Level greater or equal to Android 7.0 (API Level 24)
 - CMake
-- Android SDK Platform-Tools greater or equal to `Marshmallow` (API Level 23)
-- Android SDK Build-Tools greater or equal to `Marshmallow` (API Level 23)
-- NDK version 15 or greater
+- Android SDK Platform-Tools greater or equal to Android 7.0 (API Level 24)
+- Android SDK Build-Tools greater or equal to Android 7.0 (API Level 24)
+- NDK version r24 or greater
 
 ### Create an Android Studio Project
 
